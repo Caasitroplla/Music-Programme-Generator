@@ -1,20 +1,26 @@
 {
-    "event_details": {
+    "concert_details": {
         "name": "Unnamed Event",
         "authors": [
             "Unknown"
         ],
         "date": "01/01/2001"
     },
-    "groups": [
+    "events": [
         {
+            "type": "ensemble",
             "name": "Orchestra",
             "performances": [
                 {
-                    "song_name": "Ode to Joy",
-                    "song_author": "Beethoven"
+                    "name": "Ode to Joy",
+                    "author": "Beethoven"
                 }
             ]
+        },
+        {
+            "type": "interval",
+            "name": "interval",
+            "details": "Food served in the annexe"
         }
     ]
 }
