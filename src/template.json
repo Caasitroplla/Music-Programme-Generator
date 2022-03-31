@@ -1,0 +1,20 @@
+{
+    "event_details": {
+        "name": "Unnamed Event",
+        "authors": [
+            "Unknown"
+        ],
+        "date": "01/01/2001"
+    },
+    "groups": [
+        {
+            "name": "Orchestra",
+            "performances": [
+                {
+                    "song_name": "Ode to Joy",
+                    "song_author": "Beethoven"
+                }
+            ]
+        }
+    ]
+}
