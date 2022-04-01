@@ -1,8 +1,7 @@
 from pathlib import Path
-from json import load
 
 def homepath():
-    return Path.home()/"Documents"/"MusicProgrammes"
+    return Path.home()/"Documents"/"Programme Generator"
 
 def sourcepath():
     return Path.cwd()/"src"
@@ -12,6 +11,10 @@ def jsontemplates():
 
 def validate(filepath):
     if not Path.exists(filepath):
-        Path.mkdir(filepath)
+        try:
+            Path.mkdir(filepath)
+        except FileNotFoundError:
+            validate(Path(filepath).parent)
+            Path.mkdir(filepath)
 
 validate(homepath())
