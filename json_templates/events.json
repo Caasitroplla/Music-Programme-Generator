@@ -1,0 +1,17 @@
+{
+    "event":{
+        "type": "event",
+        "name": "Untitled Event",
+        "performances": []
+    },
+    "solo":{
+        "type": "solo",
+        "name": "Untitled Solo",
+        "performances": []
+    },
+    "interval": {
+        "type": "interval",
+        "name": "Untitled Interval",
+        "details": "Food served in the annexe"
+    }
+}

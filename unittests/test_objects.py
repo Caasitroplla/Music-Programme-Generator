@@ -1,8 +1,11 @@
 import unittest
-from src.objects import Concert, Event, Performance, Interval
+try:
+    from objects import Concert, Event, Performance, Interval
+except ModuleNotFoundError:
+    from src.objects import Concert, Event, Performance, Interval
 
-class TestObjects(unittest.TestCase):
-    def concert_test(self):
+class test_objects(unittest.TestCase):
+    def test_concert(self):
         concert = Concert()
         concert.title = "Test Concert"
 
@@ -12,3 +15,4 @@ class TestObjects(unittest.TestCase):
 
         self.assertEqual(str(concert.events[0]), "Untitled Event")
         self.assertEqual(str(concert.events[0].performances[0]), "Untitled Performance")
+
